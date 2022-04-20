@@ -1,9 +1,10 @@
+![react-native logo](https://www.sosdigital.com.br/wp-content/uploads/2020/10/react_native_vs_native_apps.png)
+[React-Native](https://reactnative.dev)
+
 <h1 align='center'>RN APP</h1>
 
 <h2 align='center'>This Project is to learn react-native framework</h2>
 
-
-[React-Native](https://reactnative.dev)
  - Version ~> "0.68.1"
 
 ## Running
