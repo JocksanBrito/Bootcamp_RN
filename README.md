@@ -1,27 +1,28 @@
 ![react-native logo](https://www.sosdigital.com.br/wp-content/uploads/2020/10/react_native_vs_native_apps.png)
-[React-Native](https://reactnative.dev)
 
 <h1 align='center'>RN APP</h1>
 
+[React-Native](https://reactnative.dev)
+
 <h2 align='center'>This Project is to learn react-native framework</h2>
 
- - Version ~> "0.68.1"
+-   Version ~> "0.68.1"
 
 ## Running
-    
-- Pre running (Android | IOS)
- - run `npm install`
-- IOS:
- - run `npx pod-install && react-native run-ios`
-- Android
- - run `react-native run-android`
+
+-   Pre running (Android | IOS)
+-   run `npm install`
+-   IOS:
+-   run `npx pod-install && react-native run-ios`
+-   Android
+-   run `react-native run-android`
 
 ## Folder structure
 
-````plainText
+```plainText
 app
 .
-├─___.bundle__      
+├─___.bundle__
 ├─___tests___       # Global setup tests
 ├─ android          # Native android files
 ├─ ios              # Native ios files
@@ -32,8 +33,8 @@ app
 │   ├─ constants    # Constants files
 │   ├─ context      # All contexts
 │   ├─ hooks        # Costumized hooks
-│   ├─ navigation   
-│   ├─ screen       
+│   ├─ navigation
+│   ├─ screen
 │   ├─ services     # Contains external and api services
 │   ├─ App          # Aplication entry
 .
@@ -43,3 +44,4 @@ app
 .
 ├─ README.md
 
+```
