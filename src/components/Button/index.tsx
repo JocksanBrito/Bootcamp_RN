@@ -9,7 +9,7 @@ const Button: React.FC<{onPress: () => void}> = ({onPress}) => {
 
     return (
         <ButtonRN
-            color={themeContext.colors.secundary}
+            color={themeContext.colors.primary.main}
             title="change theme"
             onPress={onPress}
         />

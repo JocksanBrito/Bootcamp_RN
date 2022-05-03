@@ -1,8 +1,29 @@
-export const themeLight = {
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import {DefaultTheme} from 'styled-components';
+
+import * as Colors from '../colors';
+
+export const themeLight: DefaultTheme = {
     colors: {
-        primary: 'white',
-        onPrimary: 'black',
-        secundary: 'green',
-        onSecundary: 'white',
+        primary: {
+            main: Colors.brand04,
+            onMain: Colors.white,
+        },
+        secundary: {
+            main: Colors.brand01,
+            onMain: Colors.white,
+        },
+        error: {
+            main: Colors.red,
+            onMain: Colors.white,
+        },
+        background: {
+            main: Colors.white,
+            onMain: Colors.black,
+        },
+        surface: {
+            main: Colors.neutrais,
+            onMain: Colors.white,
+        },
     },
 };

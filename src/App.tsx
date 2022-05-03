@@ -3,6 +3,8 @@ import {StyleSheet, SafeAreaView, Appearance} from 'react-native';
 import Header from './components/Header';
 import Button from './components/Button';
 
+import {Container} from './styles';
+
 import {ThemeProvider} from 'styled-components';
 import useAppearance from './hooks/useAppearance/index';
 
@@ -11,19 +13,12 @@ const App: React.FC = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <SafeAreaView style={style.App}>
+            <Container>
                 <Header />
                 <Button onPress={() => {}} />
-            </SafeAreaView>
+            </Container>
         </ThemeProvider>
     );
 };
 __DEV__;
 export default App;
-
-const style = StyleSheet.create({
-    App: {
-        flex: 1,
-        backgroundColor: 'black',
-    },
-});

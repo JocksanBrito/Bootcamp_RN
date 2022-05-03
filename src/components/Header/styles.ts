@@ -1,15 +1,15 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-    background-color: ${props => props.theme.colors.primary};
+    background-color: ${props => props.theme.colors.primary.main};
     border-width: 4px;
-    border-color: ${props => props.theme.colors.secundary};
+    border-color: ${props => props.theme.colors.secundary.main};
     padding: 10px;
     border-radius: 10px;
 `;
 
 export const Title = styled.Text`
-    color: ${props => props.theme.colors.onPrimary};
+    color: ${props => props.theme.colors.primary.onMain};
     font-size: 20px;
 `;
 
