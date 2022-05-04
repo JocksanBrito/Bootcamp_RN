@@ -7,6 +7,7 @@ import {Container} from './styles';
 
 import {ThemeProvider} from 'styled-components';
 import useAppearance from './hooks/useAppearance/index';
+import Text from './components/Text/index';
 
 const App: React.FC = () => {
     const {theme} = useAppearance();
@@ -16,6 +17,9 @@ const App: React.FC = () => {
             <Container>
                 <Header />
                 <Button onPress={() => {}} />
+                <Text typography="h3" color="secundary">
+                    App Daora
+                </Text>
             </Container>
         </ThemeProvider>
     );
