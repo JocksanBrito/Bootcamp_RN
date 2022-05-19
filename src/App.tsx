@@ -39,8 +39,6 @@ const App: React.FC = () => {
                         size={140}
                         activeColor="secundary"
                     />
-                    <Separator width={40} />
-                    <Icon icon="plate" size={150} activeColor="error" />
                 </View>
                 <View>
                     <Input

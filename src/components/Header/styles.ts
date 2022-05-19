@@ -2,10 +2,10 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
     background-color: ${props => props.theme.colors.primary.main};
-    border-width: 4px;
+    border-width: ${({theme}) => theme.borders.radius.xs}px;
     border-color: ${props => props.theme.colors.secundary.main};
-    padding: 10px;
-    border-radius: 10px;
+    padding: ${({theme}) => theme.spacing.sm}px;
+    border-radius: ${({theme}) => theme.borders.radius.xs}px;
 `;
 
 export const Title = styled.Text`

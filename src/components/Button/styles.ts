@@ -11,7 +11,7 @@ export const Container = styled.TouchableOpacity<ContainerProps>`
     padding: 12px 0px 12px 0px;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: ${({theme}) => theme.borders.radius.sm}px;
     flex-direction: row;
     background-color: ${({color, mode}) => {
         if (mode === 'outlined') {
@@ -35,5 +35,5 @@ export const Title = styled.Text<TitleProps>`
 `;
 
 export const Loading = styled.ActivityIndicator`
-    margin-left: 10px;
+    margin-left: ${({theme}) => theme.spacing.sm}px;
 `;
