@@ -1,9 +1,11 @@
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {Button, View} from 'react-native';
 
 import {Container} from './styles';
 
-const Feed: React.FC = ({navigation}) => {
+const Feed: React.FC = () => {
+    const navigation = useNavigation();
     const handlePress = () => {
         navigation.navigate('stories');
     };
