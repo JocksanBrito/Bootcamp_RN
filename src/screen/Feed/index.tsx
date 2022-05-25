@@ -8,9 +8,16 @@ const Feed: React.FC = ({navigation}) => {
         navigation.navigate('stories');
     };
 
+    const handlePressToPost = () => {
+        navigation.navigate('profile', {
+            screen: 'post',
+        });
+    };
+
     return (
         <Container>
             <Button title="Go to the Stories" onPress={handlePress}></Button>
+            <Button title="Go to the Post" onPress={handlePressToPost}></Button>
         </Container>
     );
 };
