@@ -58,5 +58,17 @@
       "json",
       "node"
     ]
-  }
+  },
+  "description": "![react-native logo](https://www.sosdigital.com.br/wp-content/uploads/2020/10/react_native_vs_native_apps.png)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JocksanBrito/Bootcamp_RN.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JocksanBrito/Bootcamp_RN/issues"
+  },
+  "homepage": "https://github.com/JocksanBrito/Bootcamp_RN#readme"
 }

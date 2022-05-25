@@ -15,9 +15,9 @@ public class MainActivity extends ReactActivity {
     return "AwesomeTSProject";
   }
   @Override
-  protected void onCreate(Bundle saveInstanceState) {
-    supe.onCreate(null);
-  }
+    protected void onCreate(Bundle savedInstanceState) {
+  super.onCreate(null);
+}
 
   /**
    * Returns the instance of the {@link ReactActivityDelegate}. There the RootView is created and
