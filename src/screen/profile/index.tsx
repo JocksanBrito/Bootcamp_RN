@@ -4,17 +4,29 @@ import Text from '~/components/Text';
 
 import {Container} from './styles';
 
-const Profile = ({navigation}) => {
+const Profile = ({navigation, route}) => {
+    const {userName} = route.params;
+    console.log(userName);
     const handleNavigation = () => navigation.push('profile');
-    const handleNavigationToTop = () => navigation.popToTop();
+    const handleUpdateParams = () =>
+        navigation.setParams({
+            userName: 'Biscottobi',
+        });
+    const handleNavigateToHome = () =>
+        navigation.navigate('home', {
+            selectedUser: 'Biscottobi',
+        });
 
     return (
         <Container>
             <TouchableOpacity onPress={handleNavigation}>
-                <Text>Profile</Text>
+                <Text> {`Profile: ${userName}`}</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={handleNavigationToTop}>
-                <Text>Pop to top</Text>
+            <TouchableOpacity onPress={handleUpdateParams}>
+                <Text>Update Params</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={handleNavigateToHome}>
+                <Text>Navigate to home with Params</Text>
             </TouchableOpacity>
         </Container>
     );
