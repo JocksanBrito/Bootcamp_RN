@@ -1,10 +1,9 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-
 import Profile from '~/screen/Profile';
 import Post from '~/screen/Post';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<ProfileStackParamList>();
 
 const ProfileStackNavigator = () => {
     return (

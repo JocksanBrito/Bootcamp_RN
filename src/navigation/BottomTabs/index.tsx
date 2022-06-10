@@ -2,9 +2,9 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Icon from '~/components/Icon';
 import HomeStackNavigator from '../HomeStackNavigator';
-import ProfileStackNavigator from '../ProfileStackNavigator/index';
+import ProfileStackNavigator from '../ProfileStackNavigator';
 
-const BottomTab = createBottomTabNavigator();
+const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
 const BottomTabs = () => {
     return (
