@@ -3,8 +3,8 @@ import {View} from 'react-native';
 
 // import { Container } from './styles';
 
-const Acess: React.FC = () => {
+const Access: React.FC = () => {
     return <View />;
 };
 
-export default Acess;
+export default Access;

@@ -1,10 +1,9 @@
 import {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';
-import {NavigatorScreenParams} from '@react-navigation/native';
 
 declare global {
     export type BottomTabParamList = {
-        home: NavigatorScreenParams<HomeStackParamList> | undefined;
-        profile: NavigatorScreenParams<ProfileStackParamList> | undefined;
+        home: undefined;
+        profile: undefined;
     };
 
     // useNavigation types
