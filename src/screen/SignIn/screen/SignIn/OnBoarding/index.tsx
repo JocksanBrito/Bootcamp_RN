@@ -4,11 +4,20 @@ import Button from '~/components/Button';
 import useAuth from '~/hooks/useAuth';
 
 const OnBoarding: React.FC = () => {
-    const {signIn} = useAuth();
+    const {signIn, loading} = useAuth();
 
     return (
         <SafeAreaView>
-            <Button onPress={signIn}>Sign In</Button>
+            <Button
+                loading={loading}
+                onPress={() =>
+                    signIn({
+                        email: '',
+                        password: '',
+                    })
+                }>
+                Sign In
+            </Button>
         </SafeAreaView>
     );
 };

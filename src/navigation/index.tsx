@@ -6,11 +6,8 @@ import {AuthContext} from '~/context/Auth';
 import useAuth from '../hooks/useAuth/index';
 
 const Routes: React.FC = () => {
-    const {isLoggedIn} = useAuth();
-
-    console.log(isLoggedIn);
-
-    return isLoggedIn ? <BottomTabsNavigator /> : <SignInNavigator />;
+    const {isSignedIn} = useAuth();
+    return isSignedIn ? <BottomTabsNavigator /> : <SignInNavigator />;
 };
 
 export default Routes;
