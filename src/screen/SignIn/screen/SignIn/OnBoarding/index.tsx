@@ -1,11 +1,9 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {View} from 'react-native';
-import {AuthContext} from '~/context/Auth';
-
-// import { Container } from './styles';
+import useAuth from '~/hooks/useAuth';
 
 const OnBoarding: React.FC = () => {
-    const ctx = useContext(AuthContext);
+    const ctx = useAuth();
     console.log(ctx);
 
     return <View />;
