@@ -1,12 +1,16 @@
 import React from 'react';
-import {View} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import Button from '~/components/Button';
 import useAuth from '~/hooks/useAuth';
 
 const OnBoarding: React.FC = () => {
-    const ctx = useAuth();
-    console.log(ctx);
+    const {signIn} = useAuth();
 
-    return <View />;
+    return (
+        <SafeAreaView>
+            <Button onPress={signIn}>Sign In</Button>
+        </SafeAreaView>
+    );
 };
 
 export default OnBoarding;
