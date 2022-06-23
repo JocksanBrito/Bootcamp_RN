@@ -1,7 +1,8 @@
 import React, {createContext, useState} from 'react';
 import {Alert} from 'react-native';
 import {UserDTO} from '~/@types/dtos/user';
-import {AuthContextProp} from '../types';
+import {AuthContextProp} from './types';
+import axios from 'axios';
 
 export const AuthContext = createContext<AuthContextProp>(
     {} as AuthContextProp,
@@ -14,13 +15,23 @@ export const AuthProvider: React.FC = ({children}) => {
 
     // Callbacks
 
-    const signIn = async (data?: {email: string; password: string}) => {
+    const signIn = async ({
+        email,
+        password,
+    }: {
+        email: string;
+        password: string;
+    }) => {
         setLoading(true);
-        await new Promise(resolve => setTimeout(() => resolve('Ok'), 2000));
-        setLoading(false);
+        const response = await axios.post('http://localhost:8080/api/auth', {
+            email,
+            password,
+        });
+        console.log(response.data.user);
+        setUser(response.data.user);
         Alert.alert('new', 'Logou');
+        setLoading(false);
         setIsSignedIn(true);
-        setUser({id: 'jocksanbritoleite'});
     };
 
     const signOut = () => {

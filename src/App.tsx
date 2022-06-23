@@ -7,11 +7,6 @@ import {AuthProvider} from './context/Auth';
 
 const App: React.FC = () => {
     const {theme} = useAppearance();
-
-    useEffect(() => {
-        fetch('http://localhost:8080/api/test').then(res => console.log(res));
-    }, []);
-
     return (
         <ThemeProvider theme={theme}>
             <NavigationContainer>

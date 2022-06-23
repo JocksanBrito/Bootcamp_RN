@@ -12,8 +12,8 @@ const OnBoarding: React.FC = () => {
                 loading={loading}
                 onPress={() =>
                     signIn({
-                        email: '',
-                        password: '',
+                        email: 'jocksan.brittos1989@gmail.com',
+                        password: 'kldjfsjkas17188847',
                     })
                 }>
                 Sign In
