@@ -4,6 +4,8 @@ import {UserDTO} from '~/@types/dtos/user';
 import {asyncUserKeys, AuthContextProp} from './types';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {signResource} from '~/services/resource/auth';
+import {RequestSignInData} from '../../services/resource/auth/types';
 
 export const AuthContext = createContext<AuthContextProp>(
     {} as AuthContextProp,
@@ -17,29 +19,16 @@ export const AuthProvider: React.FC = ({children}) => {
 
     // Callbacks
 
-    const signIn = async ({
-        email,
-        password,
-    }: {
-        email: string;
-        password: string;
-    }) => {
+    const signIn = async (data: RequestSignInData) => {
         try {
             setLoading(true);
-            const response = await axios.post(
-                'http://localhost:8080/api/auth',
-                {
-                    email,
-                    password,
-                },
-            );
-            console.log(response.data.user);
-            setUser(response.data.user);
+            const response = await signResource(data);
+            setUser(response.user);
             setIsSignedIn(true);
             //api.default.headers.Authorization = 'Baerer ${response.data.token}'
             AsyncStorage.setItem(
                 asyncUserKeys.user,
-                JSON.stringify(response.data.user),
+                JSON.stringify(response.user),
             );
         } catch (error) {
         } finally {
