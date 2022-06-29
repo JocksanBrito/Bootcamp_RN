@@ -1,4 +1,4 @@
-import {Text} from 'react-native';
+import Text from '../Text';
 import styled from 'styled-components/native';
 import {InputProps} from './types';
 

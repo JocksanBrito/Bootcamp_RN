@@ -57,7 +57,7 @@ export const typographyCommon: Typography = {
     },
 
     caption: {
-        fontSize: 12,
+        fontSize: 16,
         fontFamily: Fonts.openSansRegular,
     },
 

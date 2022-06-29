@@ -1,6 +1,6 @@
 import {useNavigation} from '@react-navigation/native';
 import React, {useState} from 'react';
-import {useWindowDimensions} from 'react-native';
+import {StatusBar, useWindowDimensions} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {useTheme} from 'styled-components';
 import Button from '~/components/Button';
@@ -27,6 +27,7 @@ const OnBoarding: React.FC = () => {
     };
     return (
         <Container>
+            <StatusBar barStyle="default" />
             <Separator height={spacing.sm} />
             <Person size={heightPerson} icon="doctor" resizeMode="contain" />
             <ContainerColum
