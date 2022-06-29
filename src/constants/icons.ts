@@ -3,7 +3,8 @@ import meditation from '../assets/images/meditacao.png';
 import plate from '../assets/images/prato.png';
 import eyeClose from '../assets/images/eye-close.png';
 import eyeOpen from '../assets/images/eye-open.png';
-import doctor from '../assets/icons/Vector.png';
+import veccinePlus from '../assets/icons/vaccine-plus/Vector.png';
+import doctor from '../assets/icons/doctor/Vector.png';
 
 export type NameIconTypes =
     | 'tree'
@@ -11,7 +12,8 @@ export type NameIconTypes =
     | 'plate'
     | 'eyeOpen'
     | 'doctor'
-    | 'eyeClose';
+    | 'eyeClose'
+    | 'veccinePlus';
 
 export default {
     tree,
@@ -19,5 +21,6 @@ export default {
     plate,
     eyeOpen,
     eyeClose,
+    veccinePlus,
     doctor,
 };
