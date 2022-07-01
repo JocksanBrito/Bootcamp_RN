@@ -129,7 +129,7 @@ const Input: React.ForwardRefRenderFunction<InputValueRef, InputProps> = (
                 {iconPosition === 'right' && renderIcon()}
             </Border>
             {!!error && (
-                <Error color="error" typography="bode1">
+                <Error color="error" typography="body1">
                     {error}
                 </Error>
             )}
