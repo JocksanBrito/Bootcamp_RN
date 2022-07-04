@@ -9,6 +9,8 @@ import checkCircle from '../assets/icons/checkCircle/Vector.png';
 import closeX from '../assets/icons/closeX/Vector.png';
 import apple from '../assets/icons/apple/Vector.png';
 import google from '../assets/icons/google/Vector.png';
+import back from '../assets/icons/back/back.png';
+import forward from '../assets/icons/forward/forward.png';
 
 export type NameIconTypes =
     | 'tree'
@@ -21,6 +23,8 @@ export type NameIconTypes =
     | 'closeX'
     | 'checkCircle'
     | 'apple'
+    | 'back'
+    | 'forward'
     | 'google';
 
 export default {
@@ -34,5 +38,7 @@ export default {
     closeX,
     checkCircle,
     apple,
+    back,
+    forward,
     google,
 };

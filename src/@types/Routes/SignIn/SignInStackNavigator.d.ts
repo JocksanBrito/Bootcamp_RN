@@ -7,6 +7,11 @@ declare global {
         login: undefined;
         onBoarding: undefined;
         signUp: undefined;
+        signUpStep2: {
+            email: string;
+            firstName: string;
+            lastName: string;
+        };
     };
 
     // useNavigation types
