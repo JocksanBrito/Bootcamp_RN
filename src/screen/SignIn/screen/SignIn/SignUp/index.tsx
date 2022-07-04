@@ -6,7 +6,6 @@ import {yupResolver} from '@hookform/resolvers/yup';
 import {useTheme} from 'styled-components';
 import useSignInNavigation from '~/hooks/useSignInNavigation';
 import HeaderOptions from '~/components/HeaderOptions';
-import Icon from '~/components/Icon';
 import Text from '~/components/Text';
 import Separator from '~/components/Separator';
 import Input from '~/components/Input';
@@ -14,7 +13,8 @@ import Button from '~/components/Button';
 import {schemaSignUp} from './validation';
 import Bar from 'react-native-progress/Bar';
 
-import {Container, AccessText, PressableX} from './styles';
+import {Container} from './styles';
+import BackButton from '~/components/BackButton';
 
 const SignUp = () => {
     const {width} = useWindowDimensions();
@@ -64,11 +64,7 @@ const SignUp = () => {
         <Container>
             <StatusBar barStyle="dark-content" />
             <HeaderOptions
-                left={
-                    <PressableX onPress={handleGoBack}>
-                        <Icon icon="closeX" size={20} />
-                    </PressableX>
-                }
+                left={<BackButton icon="closeX" onPress={handleGoBack} />}
                 center={<Separator width={spacing.md} />}
                 right={
                     <Bar

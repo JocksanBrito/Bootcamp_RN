@@ -8,10 +8,6 @@ export const Container = styled(SafeAreaView)`
     margin: 0 ${({theme}) => theme.spacing.sm}px;
 `;
 
-export const PressableX = styled(Pressable)`
-    padding: ${({theme}) => theme.spacing.sm}px;
-`;
-
 export const AccessText = styled(Text)`
     align-self: center;
 `;

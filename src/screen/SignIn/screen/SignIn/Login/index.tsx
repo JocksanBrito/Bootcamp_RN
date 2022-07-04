@@ -2,7 +2,7 @@ import React from 'react';
 import {StatusBar} from 'react-native';
 import {useForm, Controller} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
-import {Container, AccessText, PressableX} from './styles';
+import {Container, AccessText} from './styles';
 
 import Icon from '~/components/Icon';
 import HeaderOptions from '~/components/HeaderOptions';
@@ -13,6 +13,7 @@ import Input from '~/components/Input';
 import Button from '~/components/Button';
 import useSignInNavigation from '~/hooks/useSignInNavigation';
 import {schemaLogin} from './validation';
+import BackButton from '~/components/BackButton';
 
 const Login: React.FC = () => {
     const {spacing} = useTheme();
@@ -47,11 +48,7 @@ const Login: React.FC = () => {
         <Container>
             <StatusBar barStyle="dark-content" />
             <HeaderOptions
-                left={
-                    <PressableX onPress={handleGoBack}>
-                        <Icon icon="closeX" size={20} />
-                    </PressableX>
-                }
+                left={<BackButton icon="closeX" onPress={handleGoBack} />}
                 right={
                     <Text color="primary" typography="body1">
                         Esqueci minha senha
