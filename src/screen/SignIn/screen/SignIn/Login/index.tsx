@@ -1,5 +1,5 @@
 import React from 'react';
-import {StatusBar} from 'react-native';
+import {Platform, StatusBar} from 'react-native';
 import {useForm, Controller} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import {Container, AccessText} from './styles';
@@ -14,6 +14,10 @@ import Button from '~/components/Button';
 import useSignInNavigation from '~/hooks/useSignInNavigation';
 import {schemaLogin} from './validation';
 import BackButton from '~/components/BackButton';
+import {
+    appleAuth,
+    appleAuthAndroid,
+} from '@invertase/react-native-apple-authentication';
 
 const Login: React.FC = () => {
     const {spacing} = useTheme();
@@ -104,15 +108,19 @@ const Login: React.FC = () => {
             <AccessText color="surface500" typography="body3">
                 Ou acesse com login social
             </AccessText>
-            <Separator height={spacing.md} />
-            <Button
-                typography="caption"
-                icon={<Icon icon="apple" />}
-                color="secundary"
-                mode="outlined">
-                Continuar com a Apple
-            </Button>
-            <Separator height={spacing.md} />
+            {(appleAuthAndroid.isSupported || Platform.OS === 'ios') && (
+                <>
+                    <Separator height={spacing.md} />
+                    <Button
+                        typography="caption"
+                        icon={<Icon icon="apple" />}
+                        color="secundary"
+                        mode="outlined">
+                        Continuar com a Apple
+                    </Button>
+                    <Separator height={spacing.md} />
+                </>
+            )}
             <Button
                 typography="caption"
                 icon={<Icon icon="google" />}
