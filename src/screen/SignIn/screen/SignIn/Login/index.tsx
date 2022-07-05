@@ -18,6 +18,7 @@ import {
     appleAuth,
     appleAuthAndroid,
 } from '@invertase/react-native-apple-authentication';
+import {GoogleSignin} from '@react-native-google-signin/google-signin';
 
 const Login: React.FC = () => {
     const {spacing} = useTheme();
@@ -46,6 +47,15 @@ const Login: React.FC = () => {
             },
             () => console.error('Form Inválido'),
         )();
+    };
+
+    const handleGoogleButton = async () => {
+        try {
+            const {user} = await GoogleSignin.signIn();
+            console.log(user);
+        } catch (error) {
+            console.error(error);
+        }
     };
 
     return (
@@ -122,6 +132,7 @@ const Login: React.FC = () => {
                 </>
             )}
             <Button
+                onPress={handleGoogleButton}
                 typography="caption"
                 icon={<Icon icon="google" />}
                 color="secundary"

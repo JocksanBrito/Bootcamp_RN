@@ -30,11 +30,11 @@ const Access: React.FC = () => {
             <StatusBar barStyle="light-content" />
             <Column>
                 <IconRoundedVaccine>
-                    <IconVaccine icon="veccinePlus" size={80}></IconVaccine>
+                    <IconVaccine icon="veccinePlus" size={80} />
                 </IconRoundedVaccine>
                 <Separator height={spacing.md} />
                 <Text typography="h2" color="background">
-                    Vacinadex
+                    Vacinadx
                 </Text>
             </Column>
             <ContainerRounded>
