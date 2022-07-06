@@ -24,7 +24,7 @@ import Icon from '../Icon';
 
 const Input: React.ForwardRefRenderFunction<InputValueRef, InputProps> = (
     {
-        color = 'surface',
+        color = 'surface500',
         secureTextEntry,
         icon,
         iconColor,
@@ -108,7 +108,7 @@ const Input: React.ForwardRefRenderFunction<InputValueRef, InputProps> = (
     return (
         <Container>
             {!!label && (
-                <Label color="surface" typography="body3">
+                <Label color="surface600" typography="body3">
                     {label}
                 </Label>
             )}
@@ -129,7 +129,7 @@ const Input: React.ForwardRefRenderFunction<InputValueRef, InputProps> = (
                 {iconPosition === 'right' && renderIcon()}
             </Border>
             {!!error && (
-                <Error color="error" typography="bode1">
+                <Error color="error" typography="body1">
                     {error}
                 </Error>
             )}

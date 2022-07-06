@@ -29,7 +29,11 @@ declare module 'styled-components' {
         | 'secundary'
         | 'background'
         | 'error'
-        | 'surface';
+        | 'surface'
+        | 'surface50'
+        | 'surface100'
+        | 'surface500'
+        | 'surface600';
 
     export interface PaletteType {
         primary: ColorType;
@@ -37,6 +41,10 @@ declare module 'styled-components' {
         background: ColorType;
         error: ColorType;
         surface: ColorType;
+        surface50: ColorType;
+        surface100: ColorType;
+        surface500: ColorType;
+        surface600: ColorType;
     }
     /**
      *Typography
