@@ -1,4 +1,4 @@
-![react-native logo](https://www.sosdigital.com.br/wp-content/uploads/2020/10/react_native_vs_native_apps.png)
+![react-native logo](https://sosdigital.com.br/wp-content/uploads/2020/10/react_native_vs_native_apps.png)
 
 <h1 align='center'>RN APP</h1>
 
