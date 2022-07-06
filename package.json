@@ -28,7 +28,7 @@
         "react-native-progress": "^5.0.0",
         "react-native-safe-area-context": "^4.2.5",
         "react-native-screens": "^3.13.1",
-        "shell-quote": "^1.7.3",
+        "shell-quote": "1.7.2",
         "styled-components": "^5.3.5",
         "yup": "^0.32.11"
     },
