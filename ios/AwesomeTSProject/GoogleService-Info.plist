@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>565478158879-l26isedhnrf521iu9a1r6d85vrh2avt4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.565478158879-l26isedhnrf521iu9a1r6d85vrh2avt4</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>565478158879-3kb7jcu9ukgovs84ss10ldjkbhctql6d.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA9ME_cXyvDx5Nn5h6g9x_Ma7faDeJPnas</string>
+	<key>GCM_SENDER_ID</key>
+	<string>565478158879</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>club.catapulta.vacinadx</string>
+	<key>PROJECT_ID</key>
+	<string>vacinadx-727e8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vacinadx-727e8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:565478158879:ios:25257e26dd0e94ae181b2a</string>
+</dict>
+</plist>
